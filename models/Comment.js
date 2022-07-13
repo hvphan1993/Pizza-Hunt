@@ -20,11 +20,11 @@ const ReplySchema = new Schema(
       get: createdAtVal => dateFormat(createdAtVal)
     }
   },
-    {
-      toJSON: {
-        getters: true
-      }
+  {
+    toJSON: {
+      getters: true
     }
+  }
 );
 
 const CommentSchema = new Schema(
